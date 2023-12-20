@@ -60,7 +60,7 @@ jobs:
             TF_VERSION=${{ matrix.tf_version }}
             LIBCRYPTO_VERSION=${{ env.LIBCRYPTO_VERSION }}
           tags: |
-            ghcr.io/yiannistri/tf-runner:${{ env.VERSION }}-tf-${{ matrix.tf_version }}
+            ghcr.io/yiannistri/tf-runner-azure:${{ env.VERSION }}-tf-${{ matrix.tf_version }}
           labels: |
             org.opencontainers.image.title=${{ github.event.repository.name }}
             org.opencontainers.image.description=${{ github.event.repository.description }}
